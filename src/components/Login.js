@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate();
     const login = (e) => {
         e.preventDefault();
-        fetch(`https://sunbase-proxyv2.onrender.com/login`, {
+        fetch(`https://sunbase-proxy.onrender.com/login`, {
             method: "POST", mode: "cors",
 
             body: JSON.stringify({
