@@ -29,7 +29,7 @@ const Edit = () => {
     }, [isLoggedin, navigate, uuid]);
     const register = (e) => {
         e.preventDefault();
-        fetch(`https://sunbase-proxyv2.onrender.com/editUser`, {
+        fetch(`https://sunbase-proxy.onrender.com/editUser`, {
             method: "POST", mode: "cors", headers: {
                 "Content-type": "application/json"
             },
