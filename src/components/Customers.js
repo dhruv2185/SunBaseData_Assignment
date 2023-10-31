@@ -17,7 +17,7 @@ const Customers = () => {
             navigate("/");
         }
         else {
-            fetch(`https://sunbase-proxyv2.onrender.com/getCustomerList`, {
+            fetch(`https://sunbase-proxy.onrender.com/getCustomerList`, {
                 method: "POST", mode: "cors", body: JSON.stringify({ auth_token: auth_token }),
                 headers: { "Content-type": "application/json" }
             }).then(res => {
@@ -35,7 +35,7 @@ const Customers = () => {
         }
     }, [isLoggedin, refresh, auth_token, navigate])
     const deleteUser = (uuid) => {
-        fetch("https://sunbase-proxyv2.onrender.com/deleteUser", {
+        fetch("https://sunbase-proxy.onrender.com/deleteUser", {
             method: "POST",
             mode: "cors",
             body: JSON.stringify({
