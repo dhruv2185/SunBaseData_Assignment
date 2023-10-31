@@ -23,7 +23,7 @@ const Register = () => {
     }, [isLoggedin, navigate]);
     const register = (e) => {
         e.preventDefault();
-        fetch(`https://sunbase-proxyv2.onrender.com/createUser`, {
+        fetch(`https://sunbase-proxy.onrender.com/createUser`, {
             method: "POST", mode: "cors", headers: {
                 "Content-type": "application/json"
             },
